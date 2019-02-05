@@ -19,3 +19,11 @@ else {
     snoreTypeNode.textContent += applicant.snoreType[applicant.snoreType.length -1]; //using this long format instead of "i" because i is declared inside the for loop
 }
 
+//to add a message, add a message node at the top, then
+
+if(applicant.hours < 5) {
+    messageNode.textContent = 'you do not sleep enough';
+}
+else {
+    messageNode.textContent = 'you sleep a great amount';
+};
